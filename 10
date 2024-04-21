@@ -1,0 +1,6 @@
+def words_longer_than_n(lst, n):
+    return [word for word in lst if len(word) > n]
+
+sample_words = ['apple', 'banana', 'grape', 'kiwi', 'orange']
+n = 4
+print(f"Words longer than {n} characters: {words_longer_than_n(sample_words, n)}")
