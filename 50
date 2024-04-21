@@ -1,0 +1,14 @@
+def split_on_last_occurrence(string, delimiter):
+    parts = string.rsplit(delimiter, 1)
+
+    if len(parts) == 1:
+        return [string]
+    else:
+        return parts
+
+# Example usage
+input_string = "apple,banana,grape,orange"
+delimiter = ","
+result = split_on_last_occurrence(input_string, delimiter)
+print(f"Original string: {input_string}")
+print(f"Split result: {result}")
