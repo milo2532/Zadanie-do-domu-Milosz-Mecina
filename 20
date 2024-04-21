@@ -1,0 +1,4 @@
+def print_distinct_values(dictionary):
+    distinct_values = set(dictionary.values())
+    for value in distinct_values:
+        print(value)
