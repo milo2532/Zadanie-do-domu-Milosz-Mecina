@@ -1,0 +1,21 @@
+def remove_duplicate_words(s):
+    words = s.split()
+
+    unique_words = set()
+
+    result = ""
+
+    for word in words:
+        # If the word is not already in the set, add it to the result
+        if word not in unique_words:
+            result += word + " "
+            unique_words.add(word)
+
+    result = result.strip()
+
+    return result
+
+# Example usage
+input_string = "this is a test test string with duplicate duplicate words"
+result = remove_duplicate_words(input_string)
+print(f"String with duplicate words removed: '{result}'")
