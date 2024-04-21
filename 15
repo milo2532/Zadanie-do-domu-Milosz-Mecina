@@ -1,0 +1,2 @@
+def get_max_min_values(d):
+    return max(d.values()), min(d.values())
