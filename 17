@@ -1,0 +1,6 @@
+def remove_duplicates(d):
+    result = {}
+    for key, value in d.items():
+        if value not in result.values():
+            result[key] = value
+    return result
