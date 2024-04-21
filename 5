@@ -1,0 +1,6 @@
+def swap_first_two_chars(s1, s2):
+    if len(s1) < 2 or len(s2) < 2:
+        return "Both strings should have at least 2 characters"
+    return s2[:2] + s1[2:] + " " + s1[:2] + s2[2:]
+
+print(f"Swapped strings: {swap_first_two_chars('hello', 'world')}")
