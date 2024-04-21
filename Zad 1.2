@@ -1,0 +1,7 @@
+def count_character_frequency(s):
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    return char_count
+
+print(f"Character frequency: {count_character_frequency(input_string)}")
