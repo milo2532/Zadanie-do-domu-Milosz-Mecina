@@ -1,0 +1,7 @@
+def replace_first_char(s):
+    if len(s) < 2:
+        return s
+    first_char = s[0]
+    return first_char + s[1:].replace(first_char, '$')
+
+print(f"String after replacing first char: {replace_first_char(input_string)}")
