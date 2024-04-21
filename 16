@@ -1,0 +1,2 @@
+def get_dict_from_object(obj):
+    return obj.__dict__
