@@ -1,0 +1,4 @@
+numbers = [3.14159, 2.71828, 1.61803, 0.57721, 1.41421]
+
+for num in numbers:
+    print(f"{num:.2f}")
