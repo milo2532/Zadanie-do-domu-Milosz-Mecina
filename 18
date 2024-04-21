@@ -1,0 +1,2 @@
+def is_dict_empty(d):
+    return not bool(d)
