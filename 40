@@ -1,0 +1,14 @@
+def reverse_words(string):
+    words = string.split()
+
+    reversed_words = list(reversed(words))
+
+    reversed_string = ' '.join(reversed_words)
+
+    return reversed_string
+
+# Example usage
+input_string = "Hello World! This is a test."
+reversed_result = reverse_words(input_string)
+print(f"Original string: {input_string}")
+print(f"Reversed string: {reversed_result}")
