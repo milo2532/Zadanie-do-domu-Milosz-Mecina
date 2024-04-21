@@ -1,0 +1,6 @@
+def remove_nth_char(s, n):
+    if 0 <= n < len(s):
+        return s[:n] + s[n+1:]
+    return "Invalid index"
+
+print(f"String after removing 3rd char: {remove_nth_char('w3resource', 2)}")
