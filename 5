@@ -1,0 +1,9 @@
+def count_strings_with_same_first_last(lst):
+    count = 0
+    for string in lst:
+        if len(string) >= 2 and string[0] == string[-1]:
+            count += 1
+    return count
+
+sample_list = ['abc', 'xyz', 'aba', '1221']
+print(f"Number of strings with same first and last characters: {count_strings_with_same_first_last(sample_list)}")
