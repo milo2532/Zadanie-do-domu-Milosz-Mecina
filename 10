@@ -1,0 +1,6 @@
+def exchange_first_last_chars(s):
+    if len(s) < 2:
+        return s
+    return s[-1] + s[1:-1] + s[0]
+
+print(f"String after exchanging first and last chars: {exchange_first_last_chars(input_string)}")
