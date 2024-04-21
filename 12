@@ -1,0 +1,19 @@
+def count_word_occurrences(sentence):
+    words = sentence.split()
+
+    word_count = {}
+
+    for word in words:
+        word = word.strip(".,!?").lower()
+
+        if word:
+            word_count[word] = word_count.get(word, 0) + 1
+
+    return word_count
+
+# Example usage
+input_sentence = "This is a test sentence. This is another test sentence."
+result = count_word_occurrences(input_sentence)
+print("Word occurrences:")
+for word, count in result.items():
+    print(f"{word}: {count}")
