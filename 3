@@ -1,0 +1,6 @@
+def get_first_and_last_two_chars(s):
+    if len(s) < 2:
+        return "String is too short"
+    return s[:2] + s[-2:]
+
+print(f"First and last two characters: {get_first_and_last_two_chars(input_string)}")
