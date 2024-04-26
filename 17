@@ -1,6 +1,13 @@
-def remove_duplicates(d):
-    result = {}
-    for key, value in d.items():
-        if value not in result.values():
-            result[key] = value
-    return result
+def remove_duplicates(dictionary):
+    unique_dict = {}
+    for key, value in dictionary.items():
+        if key not in unique_dict:
+            unique_dict[key] = value
+    return unique_dict
+
+my_dict = {'a': 1, 'b': 2, 'c': 1, 'd': 3, 'e': 2}
+
+result_dict = remove_duplicates(my_dict)
+
+print("Dictionary after removing duplicates:")
+print(result_dict)
