@@ -1,2 +1,15 @@
-def get_dict_from_object(obj):
-    return obj.__dict__
+def object_to_dict(obj):
+    return vars(obj)
+
+class MyClass:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+
+my_object = MyClass(1, 2, 3)
+
+result_dict = object_to_dict(my_object)
+
+print("Dictionary from object's fields:")
+print(result_dict)
