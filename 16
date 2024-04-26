@@ -1,0 +1,18 @@
+def find_even_digit_numbers():
+    even_digit_numbers = []
+    for num in range(100, 401):
+        digits = [int(d) for d in str(num)]  
+        if all(digit % 2 == 0 for digit in digits):  
+            even_digit_numbers.append(num)
+    return even_digit_numbers
+
+def main():
+    even_numbers = find_even_digit_numbers()
+    if even_numbers:
+        print("Numbers with all even digits between 100 and 400 (both included):")
+        print(', '.join(map(str, even_numbers)))
+    else:
+        print("No numbers found with all even digits between 100 and 400 (both included).")
+
+if __name__ == "__main__":
+    main()
