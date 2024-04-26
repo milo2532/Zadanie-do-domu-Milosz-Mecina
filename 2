@@ -3,3 +3,8 @@ def convert_temperature(temp, scale):
         return (temp * 9/5) + 32
     elif scale.lower() == "f":
         return (temp - 32) * 5/9
+
+x = 10
+scale = "c"
+temp = convert_temperature(x, scale)
+print(temp)
