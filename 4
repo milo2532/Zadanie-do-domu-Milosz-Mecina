@@ -1,12 +1,9 @@
-dic1 = {1: 10, 2: 20}
-dic2 = {3: 30, 4: 40}
-dic3 = {5: 50, 6: 60}
+def key_exists(dictionary, key):
+    return key in dictionary
 
-concatenated_dict = {}
-
-concatenated_dict.update(dic1)
-concatenated_dict.update(dic2)
-concatenated_dict.update(dic3)
-
-print("Concatenated dictionary:")
-print(concatenated_dict)
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+key_to_check = 'b'
+if key_exists(my_dict, key_to_check):
+    print(f"The key '{key_to_check}' exists in the dictionary.")
+else:
+    print(f"The key '{key_to_check}' does not exist in the dictionary.")
