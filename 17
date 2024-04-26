@@ -7,3 +7,9 @@ def is_prime(num):
             return True
     else:
         return False
+
+def check_list(numbers):
+    for num in numbers:
+        if not is_prime(num):
+            return False
+    return True
