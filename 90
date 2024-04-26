@@ -6,7 +6,6 @@ def remove_duplicate_words(s):
     result = ""
 
     for word in words:
-        # If the word is not already in the set, add it to the result
         if word not in unique_words:
             result += word + " "
             unique_words.add(word)
