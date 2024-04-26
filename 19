@@ -1,4 +1,14 @@
 from collections import Counter
 
-def combine_dicts(dict1, dict2):
-    return dict(Counter(dict1) + Counter(dict2))
+def combine_dictionaries(d1, d2):
+    combined_dict = Counter(d1)
+    combined_dict += Counter(d2)
+    return combined_dict
+
+d1 = {'a': 100, 'b': 200, 'c': 300}
+d2 = {'a': 300, 'b': 200, 'd': 400}
+
+result_dict = combine_dictionaries(d1, d2)
+
+print("Combined Dictionary:")
+print(result_dict)
