@@ -1,0 +1,7 @@
+import random
+def guess_number():
+    number = random.randint(1, 9)
+    guess = int(input("Enter your guess: "))
+    while guess != number:
+        guess = int(input("Wrong guess. Try again: "))
+    print("Well guessed!")
