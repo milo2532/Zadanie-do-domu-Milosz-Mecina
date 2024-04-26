@@ -1,2 +1,10 @@
-def sort_dict_by_value(d, reverse=False):
-    return {k: v for k, v in sorted(d.items(), key=lambda item: item[1], reverse=reverse)}
+def sort_dict_by_value(dictionary, reverse=False):
+    return dict(sorted(dictionary.items(), key=lambda item: item[1], reverse=reverse))
+
+sample_dict = {'apple': 3, 'banana': 2, 'orange': 5, 'grape': 1}
+
+sorted_asc = sort_dict_by_value(sample_dict)
+print("Sorted by value (ascending):", sorted_asc)
+
+sorted_desc = sort_dict_by_value(sample_dict, reverse=True)
+print("Sorted by value (descending):", sorted_desc)
